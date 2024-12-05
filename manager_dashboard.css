@@ -1,0 +1,324 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins",sans-serif;
+}
+body {
+    width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(dashboard.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.navbar {
+    width: 95%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    background: transparent;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar h2 {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.tab {
+    display: flex;
+    justify-content: space-between;
+}
+.tab .tablinks{
+    width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #910096;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+span{
+	background-color: #910096;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+button:hover{
+	border: none;
+}
+.tabcontent {
+	display: none;
+}
+
+#projectStatistics h1{
+	font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+	color: #fff;
+}
+
+#projectStatistics table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#projectStatistics table,th,td {
+    padding: 15px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid white;
+}
+
+#projectStatistics form {
+    margin-top: 20px;
+    width: 300px;
+}
+
+#projectStatistics label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#projectStatistics input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#projectStatistics input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#projectStatistics input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#addTask h1{
+    text-align: center;
+    margin-bottom: 20px;
+	color: #fff; 
+}
+
+#addTask form {
+    background-color: transparent;
+    max-width: 25%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#addTask select{
+    background-color: transparent;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+
+#addTask select, input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff;
+}
+#addTask label{
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+#addTask input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addTask input[type="submit"]:hover {
+    background-color: #337f37;
+}
+
+#notice h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#notice h1 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#notice h3 {
+    color: #fff;
+    text-align: center;
+}
+
+#notice ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notice li {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#notice form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#notice label {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#notice input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    margin-left: 140px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#notice input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#notice textarea {
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#notice input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    margin-left: 90px;
+    width: 20em;
+    height: 4em;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#notice input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#viewAttendance .container-fluid h2{
+    text-align: center;
+    margin-bottom: 20px;
+	color: #fff;
+}
+#viewAttendance table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	background-color: transparent;
+}
+#viewAttendance th, td {
+	border: 1px solid #ccc;
+	padding: 5px;
+	text-align: center;
+}
+#viewAttendance th {
+    color: black;
+}
+#payrollSlip h3{
+    color: #fff;
+    text-align: center;
+}
+#payrollSlip table{
+    width: 50%;
+	border-collapse: collapse;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+	background-color: transparent;
+}
+#payrollSlip tr,td{
+    border: 2px solid #ccc;
+	padding: 5px;
+	text-align: center;
+}
+#addTask select option {
+    background-color: rgba(0,0,0,0.75);
+	color: white;
+}

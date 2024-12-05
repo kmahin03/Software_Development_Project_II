@@ -1,0 +1,289 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins",sans-serif;
+}
+body {
+    width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(dashboard.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.navbar {
+    width: 95%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    background: transparent;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar h2 {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.tab {
+    display: flex;
+    justify-content: space-between;
+}
+.tab .tablinks{
+    width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #009688;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+span{
+	background-color: #009688;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+button:hover{
+	border: none;
+}
+.tabcontent {
+	display: none;
+}
+
+#viewTask table  {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	color: #fff;
+}
+
+#viewTask th {
+    background-color: transparent;
+	border: 1px solid #fff;
+	padding: 10px;
+    text-align: center;
+}
+
+#viewTask td {
+	background-color: transparent;
+   color: white;
+   border-color: #fff;
+}
+
+#viewTask h2{
+    text-align: center;
+    margin-bottom: 20px;
+	color: #fff;
+}
+
+#viewAttendance .container-fluid h2{
+    text-align: center;
+    margin-bottom: 20px;
+	color: #fff;
+}
+#viewAttendance table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	background-color: transparent;
+}
+#viewAttendance th, td {
+	border: 1px solid #ccc;
+	padding: 5px;
+	text-align: left;
+}
+#viewAttendance td {
+    background-color: transparent;
+    color: white;
+    border-color: #fff;
+}
+
+#payrollSlip h2{
+    color: #fff;
+    text-align: center;
+}
+#payrollSlip table{
+    height: 10em;
+    width: 50%;
+	border-collapse: collapse;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+	background-color: transparent;
+    color: white;
+}
+#payrollSlip tr,td{
+    border: 2px solid #ccc;
+	padding: 5px;
+	text-align: center;
+}
+
+#notice h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#notice h1 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#notice h3 {
+    color: #fff;
+}
+
+#notice ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notice li {
+    background-color: transparent;
+	color: white;
+	text-align: center;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#notice form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#notice label {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#notice textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#notice input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    margin-left: 172px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#notice input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#updateProjectStatistics .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#updateProjectStatistics h2 {
+	color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#updateProjectStatistics form {
+	max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 5px;
+}
+
+#updateProjectStatistics label {
+	color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#updateProjectStatistics select, input[type="number"] {
+	background: transparent;
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#updateProjectStatistics select option {
+    background-color: rgba(0,0,0,0.75);
+	color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+#updateProjectStatistics input[type="submit"] {
+	width: auto;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    margin-left: 158px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#updateProjectStatistics input[type="submit"]:hover {
+    background-color: #45a049;
+}
